@@ -1,0 +1,251 @@
+<!-- YjgmC9qyPVtVGAUhSoWnbpwkHxFq_Xgb6a2XdjparpE -->
+<!-- pixabay    43125354-13f8e2fa82b5a2c7e84b5afc6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Protest Revolution", sans-serif;
+    line-height: 1.6;
+    
+}
+
+h1 {
+    color: #138065;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 299px;
+}
+
+#s {
+    color: red;
+}
+
+.container {
+    max-width: 1200px; /* Adjusted max-width */
+    margin: auto;
+}
+
+.head {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+input[type="text"] {
+    width: 60%; /* Adjusted width */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-result {
+    width: calc(33.33% - 20px); /* Adjusted width */
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.con{
+    display: flex;
+}
+.search-result img {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    background-size: cover;
+}
+
+.search-result:hover img {
+    opacity: 0.7;
+    cursor: pointer;
+    
+}
+
+.search-result a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #333;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#search-input {
+    width: 80%; /* Adjusted width */
+    max-width: 600px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+}
+
+#show-more {
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    border-radius: 7px;
+    margin: 30px auto;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #search-results {
+        padding: 20px;
+    }
+
+    .search-result {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #search-results {
+        padding: 10px;
+    }
+
+    .search-result {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+img{
+    width: auto;
+    max-height:100%;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="con">
+        <!-- <img src="imgenerator.png" alt="" style="height: 100px ;width: 150px;margin-top: 30px;border-radius: 10px ;box-shadow: (0,0,0,0.3);margin-left: 10px;"> -->
+        <h1>Image <span id="s">Generator</span></h1>
+    </div>
+        <form class="head">
+            <input type="text" id="search-input" placeholder="Search Image">
+            <button id="search-button">Generate Image</button>
+        </form>
+        <div id="search-results">
+            <!-- Placeholder content for initial search results -->
+            <div class="search-result">
+                <img src="https://images.unsplash.com/photo-1701888281398-5c5fff1748bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <a href="https://unsplash.com/photos/a-group-of-people-walking-down-a-street-at-night-CFJI5is-06Y" target="_blank">Group of people walking at night</a>
+            </div>
+            <div class="search-result">
+                <img src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhhY2tlciUyMHdpdGglMjBtYXNrfGVufDB8fDB8fHww" alt="">
+                <a href="https://unsplash.com/photos/a-group-of-people-walking-down-a-street-at-night-CFJI5is-06Y" target="_blank">Rolex Hacker</a>
+            </div>
+            <div class="search-result">
+                <img src="https://images.unsplash.com/photo-1533777419517-3e4017e2e15a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZGllcyUyMHdpdGglMjBmYW1pbHl8ZW58MHx8MHx8fDA%3D" alt="">
+                <a href="https://unsplash.com/photos/a-group-of-people-walking-down-a-street-at-night-CFJI5is-06Y" target="_blank">Food With Family</a>
+            </div>
+        </div>
+    </div>
+    <button id="show-more" style="display: none;">Show More</button>
+    <script>
+     const accessKey = "YjgmC9qyPVtVGAUhSoWnbpwkHxFq_Xgb6a2XdjparpE";
+const formEl = document.querySelector(".head");
+const inputEl = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+const showMore = document.getElementById("show-more");
+
+let page = 1;
+
+async function searchImages() {
+    const inputData = inputEl.value;
+    const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accessKey}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    const results = data.results;
+    if (page === 1) {
+        searchResults.innerHTML = ""; // Clear existing results
+    }
+    results.forEach(result => {
+        const imageWrapper = document.createElement('div');
+        imageWrapper.classList.add("search-result");
+        const image = document.createElement('img');
+        image.src = result.urls.small;
+        image.alt = result.alt_description;
+        const imageLink = document.createElement('a');
+        imageLink.href = result.links.html;
+        imageLink.target = "_blank";
+        imageLink.textContent = result.alt_description;
+        imageWrapper.appendChild(image);
+        imageWrapper.appendChild(imageLink);
+        searchResults.appendChild(imageWrapper);
+    });
+    page++;
+    if (page > 1) {
+        showMore.style.display = "block";
+    }
+}
+
+formEl.addEventListener("submit", (event) => {
+    event.preventDefault();
+    page = 1;
+    searchImages();
+});
+
+// Add event listener for "Generate Image" button
+document.getElementById('search-button').addEventListener('click', () => {
+    page = 1;
+    searchImages();
+});
+
+showMore.addEventListener("click", () => {
+    searchImages();
+});
+
+    </script>
+</body>
+</html>
